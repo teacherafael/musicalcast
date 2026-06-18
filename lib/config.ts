@@ -21,11 +21,11 @@ export const SITE = {
 // "Onde ouvir" — confira/atualize os links conforme suas páginas oficiais.
 // Pra esconder uma plataforma, é só apagar a linha dela.
 export const PLATFORMS: { name: string; href: string; icon: string }[] = [
-  { name: "Spotify", href: "https://open.spotify.com/show/SEU_ID_AQUI", icon: "spotify" },
+  { name: "Spotify", href: "https://open.spotify.com/show/5Irom6rnE74giigYKtrihf", icon: "spotify" },
   { name: "Apple Podcasts", href: "https://podcasts.apple.com/br/podcast/musical-cast/id994604243", icon: "apple" },
   { name: "YouTube", href: "https://www.youtube.com/c/MusicalCast", icon: "youtube" },
-  { name: "Deezer", href: "https://www.deezer.com/br/show/SEU_ID_AQUI", icon: "deezer" },
-  { name: "Amazon Music", href: "https://music.amazon.com.br/podcasts/SEU_ID_AQUI", icon: "amazon" },
+  { name: "Deezer", href: "https://www.deezer.com/br/show/69671", icon: "deezer" },
+  { name: "Amazon Music", href: "https://music.amazon.com.br/podcasts/f422d7eb-9d46-473b-9e69-f7dcc1850c27/musical-cast", icon: "amazon" },
 ];
 
 // Link de apoio (Catarse) e texto do Clube do Musical
