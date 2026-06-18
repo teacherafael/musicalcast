@@ -5,8 +5,8 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <Link href="/" className="wordmark" aria-label="Musical Cast — página inicial">
-          MUSICAL<span className="c">CAST</span>
+        <Link href="/" aria-label="Musical Cast — página inicial" style={{ display: "flex", alignItems: "center" }}>
+          <img src="/logo.png" alt="Musical Cast" style={{ height: 32, width: "auto" }} />
         </Link>
         <nav className="nav">
           <Link href="/#ouvir" className="nav-hide">Onde ouvir</Link>
