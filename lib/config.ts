@@ -38,13 +38,13 @@ export const SUPPORT = {
 // Equipe. Pra colocar foto: salve a imagem em /public/equipe/ (ex.: rafael.jpg)
 // e preencha o campo "photo" com "/equipe/rafael.jpg". Sem foto, aparecem as iniciais.
 export const TEAM: { name: string; role: string; instagram: string; photo?: string }[] = [
-  { name: "Rafael Nogueira", role: "Criador, produtor e apresentador", instagram: "rafamusicalcast" },
-  { name: "Letícia Saggese", role: "Co-apresentadora e criadora de conteúdo", instagram: "msletsaggese" },
-  { name: "Diego Galatti", role: "Bancada e criador de conteúdo", instagram: "diegogalatti" },
-  { name: "Gabe Queiroz", role: "Bancada e criador de conteúdo", instagram: "queiroz.gabe" },
-  { name: "Julio Velloso", role: "Criador de conteúdo", instagram: "vellosojulio" },
-  { name: "Bruno Bernardo", role: "Criador de conteúdo", instagram: "brunoabernardo" },
-  { name: "Bruno Leão", role: "Bancada e criador de conteúdo", instagram: "brucleao" },
+  { name: "Rafael Nogueira", role: "Criador, produtor e apresentador", instagram: "rafamusicalcast", photo: "/equipe/rafael.jpg" },
+  { name: "Letícia Saggese", role: "Co-apresentadora e criadora de conteúdo", instagram: "msletsaggese", photo: "/equipe/leticia.jpg" },
+  { name: "Bruno Leão", role: "Bancada e criador de conteúdo", instagram: "brucleao", photo: "/equipe/brunol.jpg" },
+  { name: "Diego Galatti", role: "Bancada e criador de conteúdo", instagram: "diegogalatti", photo: "/equipe/diego.jpg" },
+  { name: "Gabe Queiroz", role: "Bancada e criador de conteúdo", instagram: "queiroz.gabe", photo: "/equipe/gabe.jpg" },
+  { name: "Julio Velloso", role: "Criador de conteúdo", instagram: "vellosojulio", photo: "/equipe/juliov.jpg" },
+  { name: "Bruno Bernardo", role: "Criador de conteúdo", instagram: "brunoabernardo", photo: "/equipe/brunob.jpg" },
 ];
 
 export const SPECIAL_GUESTS = ["Alene Botareli", "Alexandre Furtado", "Glauver Souza"];
