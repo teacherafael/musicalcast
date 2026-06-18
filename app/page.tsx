@@ -15,7 +15,7 @@ export default async function Home() {
       <section className="hero">
         <div className="container hero-inner">
           <div className="hero-since">No ar desde 2015</div>
-          <h1>O primeiro podcast sobre <span className="c">musicais</span> do Brasil</h1>
+          <h1>O <span className="c">primeiro</span> podcast sobre <span className="c">musicais</span> do Brasil</h1>
           <p className="hero-sub">{SITE.description}</p>
           <div className="hero-actions">
             <Link href="/episodios" className="btn btn-primary">
