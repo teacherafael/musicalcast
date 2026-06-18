@@ -18,6 +18,7 @@ export default function Header() {
         <nav className="nav nav-desktop">
           <Link href="/#ouvir">Onde ouvir</Link>
           <Link href="/episodios">Episódios</Link>
+          <Link href="/sobre" className="nav-hide">Sobre</Link>
           <Link href="/#equipe">Equipe</Link>
           <a href={SUPPORT.catarseUrl} target="_blank" rel="noopener noreferrer" className="nav-cta">
             Apoie
