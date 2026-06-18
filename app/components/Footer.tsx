@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div style={{ maxWidth: 320 }}>
-            <h4>MUSICAL<span className="c">CAST</span></h4>
+            <img src="/logo.png" alt="Musical Cast" className="logo-img-footer" />
             <p style={{ color: "var(--text-soft)", fontSize: 15 }}>
               O primeiro podcast sobre musicais do Brasil. Episódios novos toda semana.
             </p>
