@@ -39,16 +39,16 @@ export default function SobrePage() {
     >
       <p style={eyebrow}>Sobre</p>
       <h1
-        style={{
-          fontFamily: "var(--font-display), sans-serif",
-          fontSize: 40,
-          fontWeight: 800,
-          lineHeight: 1.15,
-          marginBottom: 28,
-        }}
-      >
-        A história do Musical Cast
-      </h1>
+  style={{
+    fontFamily: "var(--font-display), sans-serif",
+    fontSize: 40,
+    fontWeight: 800,
+    lineHeight: 1.15,
+    marginBottom: 28,
+  }}
+>
+  A história do <span style={{ color: "#F4B53F" }}>Musical</span> Cast
+</h1>
 
       <p style={prose}>
         Criado em abril de 2015 por Rafael Nogueira, o Musical Cast nasceu da
