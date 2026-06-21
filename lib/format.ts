@@ -1,5 +1,7 @@
 // Funções utilitárias de formatação e segurança.
 
+import DOMPurify from "isomorphic-dompurify";
+
 // Transforma um texto em "slug" pra usar na URL do episódio.
 // Ex.: "A Chorus Line completa 50 anos!" -> "a-chorus-line-completa-50-anos"
 export function slugify(text: string): string {
@@ -76,13 +78,13 @@ export function truncate(text: string, max = 180): string {
   return text.slice(0, max).replace(/\s+\S*$/, "") + "…";
 }
 
-// Sanitização leve do HTML da descrição antes de exibir na página do episódio.
-// Remove scripts/styles, atributos de evento (onclick etc.) e URLs javascript:.
+// Sanitização do HTML da descrição antes de exibir na página do episódio.
+// Usa DOMPurify (allowlist de tags seguras) em vez de regex artesanal.
 export function sanitizeHtml(html: string | undefined): string {
   if (!html) return "";
-  return html
-    .replace(/<\s*(script|style|iframe|object|embed)[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, "")
-    .replace(/<\s*(script|style|iframe|object|embed)[^>]*\/?>/gi, "")
-    .replace(/\son\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, "")
-    .replace(/(href|src)\s*=\s*("|')\s*javascript:[^"']*\2/gi, "$1=$2#$2");
+  return DOMPurify.sanitize(html, {
+    ALLOWED_TAGS: ["p", "br", "a", "strong", "b", "em", "i", "u", "ul", "ol", "li", "blockquote", "h3", "h4", "span"],
+    ALLOWED_ATTR: ["href", "title", "target", "rel"],
+    ALLOW_DATA_ATTR: false,
+  });
 }

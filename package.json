@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "fast-xml-parser": "^5.9.2",
+    "isomorphic-dompurify": "^3.18.0",
     "next": "^16.2.9",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
@@ -20,5 +21,8 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "postcss": "^8.5.15"
   }
 }
