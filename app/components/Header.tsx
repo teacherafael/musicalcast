@@ -20,6 +20,7 @@ export default function Header() {
           <Link href="/episodios">Episódios</Link>
           <Link href="/sobre" className="nav-hide">Sobre</Link>
           <Link href="/#equipe">Equipe</Link>
+          <Link href="/#mcdb">MCDb</Link>
           <a href={SUPPORT.catarseUrl} target="_blank" rel="noopener noreferrer" className="nav-cta">
             Apoie
           </a>
@@ -40,6 +41,7 @@ export default function Header() {
           <Link href="/#ouvir" onClick={() => setOpen(false)}>Onde ouvir</Link>
           <Link href="/episodios" onClick={() => setOpen(false)}>Episódios</Link>
           <Link href="/#equipe" onClick={() => setOpen(false)}>Equipe</Link>
+          <Link href="/#mcdb" onClick={() => setOpen(false)}>MCDb</Link>
           <a href={SUPPORT.catarseUrl} target="_blank" rel="noopener noreferrer" className="nav-cta nav-cta-mobile" onClick={() => setOpen(false)}>
             Apoie
           </a>

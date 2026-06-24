@@ -143,6 +143,29 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* MCDB ----------------------------------------------------------- */}
+      <section id="mcdb" className="section band">
+        <div className="container" style={{ textAlign: "center" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://res.cloudinary.com/drk7o6h0p/image/upload/v1782171496/copy_of_mcdb_sembirlho_utr4xp.png"
+            alt="MCDb – Musical Cast Database"
+            style={{ height: 72, width: "auto", margin: "0 auto 16px", display: "block" }}
+          />
+          <p className="section-lead" style={{ maxWidth: 480, margin: "0 auto 28px" }}>
+            O maior arquivo digital colaborativo do teatro musical brasileiro.
+          </p>
+          <a
+            href="https://mcdb.musicalcast.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-ghost"
+          >
+            Acessar o MCDb <Icon name="arrowRight" />
+          </a>
+        </div>
+      </section>
     </>
   );
 }
