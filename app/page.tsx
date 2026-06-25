@@ -157,7 +157,7 @@ export default async function Home() {
             O maior arquivo digital colaborativo do teatro musical brasileiro.
           </p>
           <a
-            href="https://mcdb.musicalcast.com.br"
+            href="https://mcww.musicalcast.com.br"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-ghost"

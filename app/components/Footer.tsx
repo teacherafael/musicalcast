@@ -28,7 +28,7 @@ export default function Footer() {
               <Link href="/episodios">Episódios</Link>
               <Link href="/#ouvir">Onde ouvir</Link>
               <Link href="/#equipe">Equipe</Link>
-              <a href="https://mcdb.musicalcast.com.br" target="_blank" rel="noopener noreferrer">MCDb</a>
+              <a href="https://mcww.musicalcast.com.br" target="_blank" rel="noopener noreferrer">MCDb</a>
             </div>
           </div>
 
