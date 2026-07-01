@@ -154,10 +154,10 @@ export default async function Home() {
             style={{ height: 72, width: "auto", margin: "0 auto 16px", display: "block" }}
           />
           <p className="section-lead" style={{ maxWidth: 480, margin: "0 auto 28px" }}>
-            O maior arquivo digital colaborativo do teatro musical brasileiro.
+            O maior arquivo digital do teatro musical brasileiro.
           </p>
           <a
-            href="https://mcww.musicalcast.com.br"
+            href="https://mcdb.musicalcast.com.br"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-ghost"
