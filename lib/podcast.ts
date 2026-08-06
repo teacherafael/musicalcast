@@ -58,7 +58,14 @@ async function fetchXml(): Promise<string | null> {
   try {
     const res = await fetch(RSS_URL, {
       next: { revalidate: 3600 },
-      headers: { "User-Agent": "MusicalCast-Site/1.0" },
+      headers: {
+        // Alguns feeds (Anchor/Spotify) recusam User-Agents "de robô" e param
+        // de servir a versão nova pro servidor. Um UA de navegador real evita
+        // esse bloqueio silencioso na atualização do feed.
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        Accept: "application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
+      },
     });
     if (!res.ok) return null;
     return await res.text();
